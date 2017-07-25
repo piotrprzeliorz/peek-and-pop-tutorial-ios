@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE5119A81E7D6B1300AC1361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119A71E7D6B1300AC1361 /* AppDelegate.swift */; };
-		AE5119AA1E7D6B1300AC1361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119A91E7D6B1300AC1361 /* ViewController.swift */; };
-		AE5119AD1E7D6B1300AC1361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5119AB1E7D6B1300AC1361 /* Main.storyboard */; };
+		AE3D6FFE1F277A75000E4579 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D6FFD1F277A75000E4579 /* UIViewController.swift */; };
+		AE3D70001F277A94000E4579 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D6FFF1F277A94000E4579 /* UITableViewCell.swift */; };
+		AE4F99C21EDC1BD300B858FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F99C11EDC1BD300B858FC /* Constants.swift */; };
 		AE5119AF1E7D6B1300AC1361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5119AE1E7D6B1300AC1361 /* Assets.xcassets */; };
-		AE5119B21E7D6B1300AC1361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5119B01E7D6B1300AC1361 /* LaunchScreen.storyboard */; };
 		AE5119BD1E7D6B1300AC1361 /* PeekAndPopTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119BC1E7D6B1300AC1361 /* PeekAndPopTutorialTests.swift */; };
 		AE5119C81E7D6B1300AC1361 /* PeekAndPopTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119C71E7D6B1300AC1361 /* PeekAndPopTutorialUITests.swift */; };
+		AE5119D71E7D6C3100AC1361 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119D61E7D6C3100AC1361 /* Restaurant.swift */; };
+		AE5119DE1E7D6EA700AC1361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5119DC1E7D6EA700AC1361 /* AppDelegate.swift */; };
+		AE5119DF1E7D6EA700AC1361 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE5119DD1E7D6EA700AC1361 /* Info.plist */; };
+		AED89A601E7FD0CB00A316F1 /* RestaurantImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED89A5F1E7FD0CB00A316F1 /* RestaurantImageView.swift */; };
+		AEEB50C21E7D6F0C00615C44 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB50C11E7D6F0C00615C44 /* RestaurantsViewController.swift */; };
+		AEEB50C71E7D6F4500615C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEB50C51E7D6F4500615C44 /* LaunchScreen.storyboard */; };
+		AEEB50C81E7D6F4500615C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEB50C61E7D6F4500615C44 /* Main.storyboard */; };
+		AEEB50C91E7D6F6300615C44 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = AE5119DD1E7D6EA700AC1361 /* Info.plist */; };
+		AEEB50D01E7D76C800615C44 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB50CF1E7D76C800615C44 /* RestaurantCell.swift */; };
+		AEEB50D21E7D7D0F00615C44 /* RestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB50D11E7D7D0F00615C44 /* RestaurantDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +43,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE3D6FFD1F277A75000E4579 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		AE3D6FFF1F277A94000E4579 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		AE4F99C11EDC1BD300B858FC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Supporting Files/Constants.swift"; sourceTree = "<group>"; };
 		AE5119A41E7D6B1300AC1361 /* PeekAndPopTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeekAndPopTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5119A71E7D6B1300AC1361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE5119A91E7D6B1300AC1361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE5119AC1E7D6B1300AC1361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE5119AE1E7D6B1300AC1361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE5119B11E7D6B1300AC1361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AE5119B31E7D6B1300AC1361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5119B81E7D6B1300AC1361 /* PeekAndPopTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeekAndPopTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5119BC1E7D6B1300AC1361 /* PeekAndPopTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekAndPopTutorialTests.swift; sourceTree = "<group>"; };
 		AE5119BE1E7D6B1300AC1361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5119C31E7D6B1300AC1361 /* PeekAndPopTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeekAndPopTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5119C71E7D6B1300AC1361 /* PeekAndPopTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekAndPopTutorialUITests.swift; sourceTree = "<group>"; };
 		AE5119C91E7D6B1300AC1361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5119D61E7D6C3100AC1361 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Model/Restaurant.swift; sourceTree = "<group>"; };
+		AE5119DC1E7D6EA700AC1361 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Supporting Files/AppDelegate.swift"; sourceTree = "<group>"; };
+		AE5119DD1E7D6EA700AC1361 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		AED89A5F1E7FD0CB00A316F1 /* RestaurantImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantImageView.swift; sourceTree = "<group>"; };
+		AEEB50C11E7D6F0C00615C44 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		AEEB50C51E7D6F4500615C44 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEEB50C61E7D6F4500615C44 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		AEEB50CF1E7D76C800615C44 /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		AEEB50D11E7D7D0F00615C44 /* RestaurantDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE3D6FFC1F277A56000E4579 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE3D6FFD1F277A75000E4579 /* UIViewController.swift */,
+				AE3D6FFF1F277A94000E4579 /* UITableViewCell.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AE51199B1E7D6B1300AC1361 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +122,13 @@
 		AE5119A61E7D6B1300AC1361 /* PeekAndPopTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				AE5119A71E7D6B1300AC1361 /* AppDelegate.swift */,
-				AE5119A91E7D6B1300AC1361 /* ViewController.swift */,
-				AE5119AB1E7D6B1300AC1361 /* Main.storyboard */,
-				AE5119AE1E7D6B1300AC1361 /* Assets.xcassets */,
-				AE5119B01E7D6B1300AC1361 /* LaunchScreen.storyboard */,
-				AE5119B31E7D6B1300AC1361 /* Info.plist */,
+				AE5119DB1E7D6DF800AC1361 /* ViewControllers */,
+				AE5119D51E7D6C1600AC1361 /* Model */,
+				AEEB50CC1E7D768D00615C44 /* View */,
+				AE5119DA1E7D6DD500AC1361 /* Resources  */,
+				AE5119D91E7D6DBF00AC1361 /* Storyboards */,
+				AE3D6FFC1F277A56000E4579 /* Extensions */,
+				AE5119D81E7D6D7A00AC1361 /* Supporting Files */,
 			);
 			path = PeekAndPopTutorial;
 			sourceTree = "<group>";
@@ -123,6 +149,61 @@
 				AE5119C91E7D6B1300AC1361 /* Info.plist */,
 			);
 			path = PeekAndPopTutorialUITests;
+			sourceTree = "<group>";
+		};
+		AE5119D51E7D6C1600AC1361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE5119D61E7D6C3100AC1361 /* Restaurant.swift */,
+			);
+			name = Model;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE5119D81E7D6D7A00AC1361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4F99C11EDC1BD300B858FC /* Constants.swift */,
+				AE5119DC1E7D6EA700AC1361 /* AppDelegate.swift */,
+				AE5119DD1E7D6EA700AC1361 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE5119D91E7D6DBF00AC1361 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB50C61E7D6F4500615C44 /* Main.storyboard */,
+				AEEB50C51E7D6F4500615C44 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE5119DA1E7D6DD500AC1361 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				AE5119AE1E7D6B1300AC1361 /* Assets.xcassets */,
+			);
+			name = "Resources ";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE5119DB1E7D6DF800AC1361 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB50C11E7D6F0C00615C44 /* RestaurantsViewController.swift */,
+				AEEB50D11E7D7D0F00615C44 /* RestaurantDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AEEB50CC1E7D768D00615C44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEEB50CF1E7D76C800615C44 /* RestaurantCell.swift */,
+				AED89A5F1E7FD0CB00A316F1 /* RestaurantImageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +274,7 @@
 				TargetAttributes = {
 					AE5119A31E7D6B1300AC1361 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q9FBT3ZA8A;
 						ProvisioningStyle = Automatic;
 					};
 					AE5119B71E7D6B1300AC1361 = {
@@ -232,9 +314,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5119B21E7D6B1300AC1361 /* LaunchScreen.storyboard in Resources */,
+				AEEB50C71E7D6F4500615C44 /* LaunchScreen.storyboard in Resources */,
+				AE5119DF1E7D6EA700AC1361 /* Info.plist in Resources */,
 				AE5119AF1E7D6B1300AC1361 /* Assets.xcassets in Resources */,
-				AE5119AD1E7D6B1300AC1361 /* Main.storyboard in Resources */,
+				AEEB50C81E7D6F4500615C44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5119AA1E7D6B1300AC1361 /* ViewController.swift in Sources */,
-				AE5119A81E7D6B1300AC1361 /* AppDelegate.swift in Sources */,
+				AEEB50D01E7D76C800615C44 /* RestaurantCell.swift in Sources */,
+				AEEB50C91E7D6F6300615C44 /* Info.plist in Sources */,
+				AE3D6FFE1F277A75000E4579 /* UIViewController.swift in Sources */,
+				AE5119DE1E7D6EA700AC1361 /* AppDelegate.swift in Sources */,
+				AEEB50C21E7D6F0C00615C44 /* RestaurantsViewController.swift in Sources */,
+				AE3D70001F277A94000E4579 /* UITableViewCell.swift in Sources */,
+				AED89A601E7FD0CB00A316F1 /* RestaurantImageView.swift in Sources */,
+				AEEB50D21E7D7D0F00615C44 /* RestaurantDetailsViewController.swift in Sources */,
+				AE5119D71E7D6C3100AC1361 /* Restaurant.swift in Sources */,
+				AE4F99C21EDC1BD300B858FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +385,6 @@
 			targetProxy = AE5119C41E7D6B1300AC1361 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AE5119AB1E7D6B1300AC1361 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE5119AC1E7D6B1300AC1361 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AE5119B01E7D6B1300AC1361 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE5119B11E7D6B1300AC1361 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE5119CA1E7D6B1300AC1361 /* Debug */ = {
@@ -412,9 +484,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PeekAndPopTutorial/Info.plist;
+				DEVELOPMENT_TEAM = Q9FBT3ZA8A;
+				INFOPLIST_FILE = "$(SRCROOT)/PeekAndPopTutorial/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = df.PeekAndPopTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = pp.PeekAndPopTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,9 +498,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PeekAndPopTutorial/Info.plist;
+				DEVELOPMENT_TEAM = Q9FBT3ZA8A;
+				INFOPLIST_FILE = "$(SRCROOT)/PeekAndPopTutorial/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = df.PeekAndPopTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = pp.PeekAndPopTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -505,6 +581,7 @@
 				AE5119CE1E7D6B1300AC1361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5119CF1E7D6B1300AC1361 /* Build configuration list for PBXNativeTarget "PeekAndPopTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +590,7 @@
 				AE5119D11E7D6B1300AC1361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5119D21E7D6B1300AC1361 /* Build configuration list for PBXNativeTarget "PeekAndPopTutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +599,7 @@
 				AE5119D41E7D6B1300AC1361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
