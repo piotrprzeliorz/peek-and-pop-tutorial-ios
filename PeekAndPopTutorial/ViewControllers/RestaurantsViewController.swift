@@ -18,9 +18,9 @@ final class RestaurantsViewController: UIViewController {
     
     fileprivate var restaurants: [Restaurant] = {
         return [
-            Restaurant(createRestaurantWithData: "Marina", photo: #imageLiteral(resourceName: "marina_restaurant"), description: Decriptions.Marina.rawValue, address: Addresses.Marina.rawValue),
-            Restaurant(createRestaurantWithData: "Monopol", photo:  #imageLiteral(resourceName: "monopol_restaurant"), description: Decriptions.Monopol.rawValue, address: Addresses.Monopol.rawValue),
-            Restaurant(createRestaurantWithData: "Campo", photo:#imageLiteral(resourceName: "campo_restaurant"), description: Decriptions.Campo.rawValue, address: Addresses.Campo.rawValue),
+            Restaurant(name: "Marina", photo: #imageLiteral(resourceName: "marina_restaurant"), description: Decriptions.Marina.rawValue, address: Addresses.Marina.rawValue),
+            Restaurant(name: "Monopol", photo:  #imageLiteral(resourceName: "monopol_restaurant"), description: Decriptions.Monopol.rawValue, address: Addresses.Monopol.rawValue),
+            Restaurant(name: "Campo", photo:#imageLiteral(resourceName: "campo_restaurant"), description: Decriptions.Campo.rawValue, address: Addresses.Campo.rawValue),
             ]
     }()
     
