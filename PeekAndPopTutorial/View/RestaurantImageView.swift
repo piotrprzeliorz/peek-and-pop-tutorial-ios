@@ -11,7 +11,7 @@ import UIKit
 final class RestaurantImageView: UIImageView {
 
     override func awakeFromNib() {
-        self.layer.cornerRadius = 10
-        self.clipsToBounds = true
+        layer.cornerRadius = 10
+        clipsToBounds = true
     }
 }

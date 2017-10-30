@@ -12,10 +12,10 @@ final class RestaurantDetailsViewController: UIViewController {
     
     //MARK:- IBOutlets
 
-    @IBOutlet weak var restaurantNameLabel: UILabel!
-    @IBOutlet weak var restaurantImageView: RestaurantImageView!
-    @IBOutlet weak var restaurantAddressTextView: UITextView!
-    @IBOutlet weak var restaurantDescriptionLabel: UILabel!
+    @IBOutlet private weak var restaurantNameLabel: UILabel!
+    @IBOutlet private weak var restaurantImageView: RestaurantImageView!
+    @IBOutlet private weak var restaurantAddressTextView: UITextView!
+    @IBOutlet private weak var restaurantDescriptionLabel: UILabel!
     
     //MARK:- Variables
     
@@ -31,9 +31,9 @@ final class RestaurantDetailsViewController: UIViewController {
     //MARK:- Main
     
     private func setupView() {
-        restaurantNameLabel.text = self.restaurant?.name
-        restaurantImageView.image = self.restaurant?.photo
-        restaurantAddressTextView.text = self.restaurant?.address
-        restaurantDescriptionLabel.text = self.restaurant?.description
+        restaurantNameLabel.text = restaurant?.name
+        restaurantImageView.image = restaurant?.photo
+        restaurantAddressTextView.text = restaurant?.address
+        restaurantDescriptionLabel.text = restaurant?.description
     }
 }

@@ -14,5 +14,4 @@ struct Restaurant {
     var photo: UIImage
     var description: String
     var address: String
-
 }

@@ -12,11 +12,11 @@ final class RestaurantsViewController: UIViewController {
     
     //MARK:- IBOutlets
     
-    @IBOutlet weak var restaurantTableView: UITableView!
+    @IBOutlet private weak var restaurantTableView: UITableView!
     
     //MARK:- Data source
     
-    fileprivate var restaurants: [Restaurant] = {
+    private lazy var restaurants: [Restaurant] = {
         return [
             Restaurant(name: "Marina", photo: #imageLiteral(resourceName: "marina_restaurant"), description: Decriptions.Marina.rawValue, address: Addresses.Marina.rawValue),
             Restaurant(name: "Monopol", photo:  #imageLiteral(resourceName: "monopol_restaurant"), description: Decriptions.Monopol.rawValue, address: Addresses.Monopol.rawValue),
@@ -24,7 +24,7 @@ final class RestaurantsViewController: UIViewController {
             ]
     }()
     
-    //MARK:- Lifecycle methods
+    //MARK:- VC's life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ final class RestaurantsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = sender as? IndexPath else { return }
-        let destinationViewController  = segue.destination as! RestaurantDetailsViewController
+        guard let destinationViewController  = segue.destination as? RestaurantDetailsViewController else { return }
         destinationViewController.restaurant = restaurants[indexPath.row]
     }
 }
@@ -60,7 +60,7 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantCell.identifier) as! RestaurantCell
+        let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantCell.identifier) as! RestaurantCell
         cell.configureCellView(withRestaurant: restaurants[indexPath.row])
         return cell
     }
@@ -79,7 +79,7 @@ extension RestaurantsViewController: UIViewControllerPreviewingDelegate {
         guard let restuarantDetailsViewController = storyboard?.instantiateViewController(withIdentifier: RestaurantDetailsViewController.identifier) as? RestaurantDetailsViewController else { return nil }
         let restaurant = restaurants[indexPath.row]
         restuarantDetailsViewController.restaurant = restaurant
-        restuarantDetailsViewController.preferredContentSize = CGSize(width: 0, height: 500)
+        restuarantDetailsViewController.preferredContentSize = CGSize(width: 0, height: UIScreen.main.bounds.height/1.5)
         previewingContext.sourceRect = cell.frame
         return restuarantDetailsViewController
     }

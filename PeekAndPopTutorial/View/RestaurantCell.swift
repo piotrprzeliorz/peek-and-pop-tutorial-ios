@@ -10,9 +10,8 @@ import UIKit
 
 final class RestaurantCell: UITableViewCell {
     
-    
-    @IBOutlet weak var restaurantImageView: RestaurantImageView!
-    @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet private weak var restaurantImageView: RestaurantImageView!
+    @IBOutlet private weak var restaurantNameLabel: UILabel!
     
     func configureCellView(withRestaurant restuarant: Restaurant) {
         self.restaurantImageView.image = restuarant.photo
