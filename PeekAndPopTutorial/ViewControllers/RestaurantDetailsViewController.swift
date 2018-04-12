@@ -9,6 +9,24 @@
 import UIKit
 
 final class RestaurantDetailsViewController: UIViewController {
+    lazy var previewActions:[UIPreviewActionItem] = {
+        func previewActionWithTitle(title:String, style:UIPreviewActionStyle = .default) -> UIPreviewAction {
+            return UIPreviewAction(title: title, style: style) { (previewAction, viewController) -> Void in
+                print("\(previewAction.title)")
+            }
+        }
+        
+        let a = previewActionWithTitle(title: "a")
+        let b = previewActionWithTitle(title: "b", style: .destructive)
+        let c = previewActionWithTitle(title: "c", style: .selected)
+        let d_e_f = UIPreviewActionGroup(title: "d&e&f ...",
+                                         style: .default,
+                                         actions: [previewActionWithTitle(title: "d"),
+                                                   previewActionWithTitle(title: "e"),
+                                                   previewActionWithTitle(title: "f")])
+        
+        return [a,b,c,d_e_f]
+    }()
     
     //MARK:- IBOutlets
 
@@ -35,5 +53,9 @@ final class RestaurantDetailsViewController: UIViewController {
         restaurantImageView.image = restaurant?.photo
         restaurantAddressTextView.text = restaurant?.address
         restaurantDescriptionLabel.text = restaurant?.description
+    }
+    
+    override var previewActionItems: [UIPreviewActionItem] {
+        return previewActions
     }
 }

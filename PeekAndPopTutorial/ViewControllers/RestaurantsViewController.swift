@@ -74,13 +74,15 @@ extension RestaurantsViewController: UITableViewDelegate, UITableViewDataSource 
 extension RestaurantsViewController: UIViewControllerPreviewingDelegate {
     
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-        guard let indexPath = restaurantTableView?.indexPathForRow(at: location) else { return nil }
+        guard let point = restaurantTableView?.convert(location, from: self.view) else { return nil }
+        guard let indexPath = restaurantTableView?.indexPathForRow(at: point) else { return nil }
         guard let cell = restaurantTableView?.cellForRow(at: indexPath) else { return nil }
         guard let restuarantDetailsViewController = storyboard?.instantiateViewController(withIdentifier: RestaurantDetailsViewController.identifier) as? RestaurantDetailsViewController else { return nil }
         let restaurant = restaurants[indexPath.row]
         restuarantDetailsViewController.restaurant = restaurant
-        restuarantDetailsViewController.preferredContentSize = CGSize(width: 0, height: UIScreen.main.bounds.height/1.5)
-        previewingContext.sourceRect = cell.frame
+        restuarantDetailsViewController.preferredContentSize = CGSize.zero
+        let frame = restaurantTableView.convert(cell.frame, to: self.view)
+        previewingContext.sourceRect = frame
         return restuarantDetailsViewController
     }
     
